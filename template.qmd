@@ -416,7 +416,9 @@ The final step is to run the selected model on all the data. Fit a final model a
 
 ```{r}
 #run model 2 on all the data using a 10 fold cross validation 
-kfold_cv(10, penguins_fold, f2)
+final_mod<-lm(f2,data=penguins_clean)
+
+summary(final_mod)
 
 ```
 
